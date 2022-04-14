@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ETnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETcelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/hint_celular"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/ETnombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ETnombre"
+        app:layout_constraintTop_toBottomOf="@+id/ETnombre"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/TXTresultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/LBL_resultado"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ETcelular"
+        app:layout_constraintStart_toStartOf="@+id/ETcelular"
+        app:layout_constraintTop_toBottomOf="@+id/ETcelular" />
+
+    <Button
+        android:id="@+id/BTNmostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/Red"
+        android:text="@string/Text_Mostrar_Info"
+        app:layout_constraintEnd_toEndOf="@+id/ETcelular"
+        app:layout_constraintStart_toStartOf="@+id/ETcelular"
+        app:layout_constraintTop_toBottomOf="@+id/TXTresultado" />
+
+    <Button
+        android:id="@+id/BTNinvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/DarkRed"
+        android:text="@string/Text_invertir"
+        app:layout_constraintEnd_toEndOf="@+id/BTNmostrar"
+        app:layout_constraintStart_toStartOf="@+id/BTNmostrar"
+        app:layout_constraintTop_toBottomOf="@+id/BTNmostrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

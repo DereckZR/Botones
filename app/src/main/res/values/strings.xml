@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ejercicio2</string>
+    <string name="hint_nombre">Name:</string>
+    <string name="hint_celular">Cellphone number:</string>
+    <string name="Text_Mostrar_Info">Mostrar Info</string>
+    <string name="Text_invertir">Invertir</string>
+    <string name="LBL_resultado">Resultado</string>
+
+</resources>
